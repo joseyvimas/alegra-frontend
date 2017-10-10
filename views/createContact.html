@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css">
+      
+      <!-- JQuery -->
+      <script src="static/js/jquery-3.2.1.min.js"></script>
+
+      <!-- Bootstrap -->
+      <script src="static/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="static/css/style.css">
+
+      <!-- Ext JS -->
+      <link href = "https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-neptune/resources/theme-neptune-all.css" rel="stylesheet" />
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+      
+      <!-- Favicon -->
+      <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+      <title>Nuevo contacto</title>
+   </head>
+   
+   <body>
+      <!-- Header -->
+      <div class="container header">
+         <div class ="row" style="width:1024px; margin: 0 auto">
+               <div class="log col-lg-3 col-md-3">
+                  <a href="/"> <img id ="logo" src="https://cdn1.alegra.com/images/logo_alegra.png" style="width: 178px"/></a>
+               </div>
+               <div class ="buscador col-lg-3 col-md-3">
+                  <input class ="form-control" id ="busqueda" type ="texto" placeholder="Buscar...">
+               </div>
+               <div class="herramien col-lg-6 col-md-6">
+                  <ul id = "herramientas" class="nav navbar-nav">
+                     <li>
+                        <a href=""><i class="fa fa-info" aria-hidden="true"></i> Ayuda</a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fa fa-question" aria-hidden="true"></i> Soporte</a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fa fa-user" aria-hidden="true"></i> jyvimas@gmail.com</a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fa fa-cog" aria-hidden="true"></i> Configuración</a>
+                     </li>
+                     <li>
+                        <a href=""><i class="fa fa-sign-out" aria-hidden="true"></i> Salir</a>
+                     </li>
+                  </ul>
+            </div>
+         </div>
+      </div>
+
+      <!-- Menu -->
+      <div class="container">
+         <div class="wrap" style="width:1024px; margin: 0 auto">
+            <span class="decor"></span>      
+               <ul class="primary">
+                   <li>
+                     <a href="">Inicio</a>
+                   </li>
+                   <li>
+                     <a href="">Ingresos</a>
+                     <ul class="sub">
+                       <li><a href="">Factura de venta</a></li>
+                       <li><a href="">Facturas recurrentes</a></li>
+                       <li><a href="">Pagos recibidos</a></li>
+                       <li><a href="">Notas crédito</a></li>
+                       <li><a href="">Cotizaciones</a></li>
+                       <li><a href="">Remisiones</a></li>
+                       <li><a href="">POS</a></li>
+                     </ul>
+                   </li>
+                   <li>
+                     <a href="">Gastos</a>
+                     <ul class="sub">
+                       <li><a href="">Pagos</a></li>
+                       <li><a href="">Facturas de proveedores</a></li>
+                       <li><a href="">Pagos recurrentes</a></li>
+                       <li><a href="">Notas débito</a></li>
+                       <li><a href="">Órdenes de compra</a></li>
+                     </ul>  
+                   </li>
+                   <li class="active">
+                     <a href="../index.html">Contactos</a>
+                     <ul class="sub">
+                       <li><a href="">Todos</a></li>
+                       <li><a href="">Clientes</a></li>
+                       <li><a href="">Proveedores</a></li>
+                     </ul>  
+                   </li>
+                   <li>
+                     <a href="">Inventario</a>
+                     <ul class="sub">
+                       <li><a href="">Item de venta</a></li>
+                       <li><a href="">Valor de Inventario</a></li>
+                       <li><a href="">Ajustes a Inventario</a></li>
+                       <li><a href="">Gestión de Items</a></li>
+                       <li><a href="">Lista de precios</a></li>
+                       <li><a href="">Bodegas</a></li>
+                     </ul>  
+                   </li>
+                   <li>
+                     <a href="">Bancos</a>
+                   </li>
+                   <li>
+                     <a href="">Categorías</a>
+                     <ul class="sub">
+                       <li><a href="">Categorías</a></li>
+                       <li><a href="">Ajustes de Categorías</a></li>
+                     </ul>  
+                   </li>
+                   <li>
+                     <a href="">Reportes</a>  
+                   </li>
+                   <li class ="nuevo">
+                     <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i>  Nuevo</a>
+                   </li>          
+               </ul>
+         </div>
+      </div>
+
+      <div class ="container">
+         <div class="cont container" style="width:1024px">
+           <div class="title"><a><i class="fa fa-plus-circle" aria-hidden="true"></i> Nuevo Contacto</a></div>
+         </div>
+      </div>
+
+      <div style="width:1024px; margin: 0 auto" id="form"></div>  
+
+      <!-- Footer -->
+      <div class ="footer">
+         <footer>
+           <div id="ayuda" class="fondo">
+               <h4>Ayudas paso a paso</h4>
+               <ul>
+                   <li><a href="http://ayuda.alegra.com/hc/es/articles/205798409-C%C3%B3mo-hacer-una-Factura-de-venta-" target="_blank">Cómo crear una factura de venta</a></li>
+                   <li><a href="http://ayuda.alegra.com/hc/es/articles/206509365--C%C3%B3mo-crear-una-Factura-de-Proveedor-" target="_blank">Cómo crear una factura de proveedor</a></li>
+                   <li><a href="http://ayuda.alegra.com/hc/es/articles/206509615--C%C3%B3mo-importar-contactos-" target="_blank">Cómo importar contactos</a></li>
+                   <li><a href="http://ayuda.alegra.com/hc/es/articles/206512955--C%C3%B3mo-crear-un-Banco-" target="_blank">Cómo crear una cuenta de Banco</a></li>
+                   <li><a href="http://ayuda.alegra.com/hc/es/articles/206509105-Agregar-un-pago-a-una-factura" target="_blank">Cómo registrar un pago a una factura de venta</a></li>
+                   <li><a href="http://ayuda.alegra.com/hc/es/articles/205798349--C%C3%B3mo-crear-una-Nota-Cr%C3%A9dito-" target="_blank">Cómo crear una nota crédito</a></li>
+               </ul>
+           </div>
+
+           <div id="soporte" class="fondo">
+               <h4>Soporte</h4>
+               <ul>
+                   <li>Contáctanos</li>
+                   <li><a href="http://ayuda.alegra.com/hc/es" target="_blank">Centro de ayuda</a></li>
+                   <li><a href="http://www.alegra.com/manual.pdf" target="_blank">Manual de primeros pasos en Alegra</a></li>
+                   <li><a href="http://www.alegra.com/acrecer-con-alegra" target="_blank">Plan de referidos</a></li>
+                   <li><a href="http://ayuda.alegra.com/hc/es/articles/205761789-Caso-de-%C3%A9xito" target="_blank">Comparte tu historia</a></li>
+               </ul>
+           </div>
+
+           <div id="contactos" class="fondo">
+               <h4>Contactos</h4>
+               <ul>
+                  <li><a href="http://ayuda.alegra.com/hc/es/articles/206509595--C%C3%B3mo-crear-un-cliente-y-o-proveedor-" target="_blank">¿Cómo crear un Cliente?</a></li>
+                  <li><a href="http://ayuda.alegra.com/hc/es/articles/206509615--C%C3%B3mo-importar-contactos-" target="_blank">¿Cómo importar contactos?</a></li>
+               </ul>
+           </div>
+         </footer>
+      </div>
+
+   </body>
+   <!-- Controlador createContact -->
+   <script type="text/javascript" src="../controllers/createContact.js"></script>
+
+</html>

@@ -1,0 +1,366 @@
+body { 
+  background-color: white !important;
+  height: 100%;
+  width: 100%;
+}
+
+/************************Header***********************/
+.header{
+	margin-bottom: 15px;
+}
+
+#busqueda{
+	margin-top: 30px;
+	width: 85%;
+}
+
+
+#logo{
+	margin-top: 31px;
+}
+
+#herramientas li a{
+	color: #666;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 11px;
+}
+/************************FHeader***********************/
+
+
+
+/************************Menu***********************/
+.wrap {
+  -webkit-box-shadow: 0 0 70px #fff;
+  -moz-box-shadow: 0 0 70px #fff;
+  box-shadow: 0 0 70px #fff;
+}
+
+.decor {
+  background: #00b19d;
+  background: -webkit-linear-gradient(left, #e4edea 50%, #00b19d 50%);
+  background: -moz-linear-gradient(left, #e4edea 50%, #00b19d 50%);
+  background: -o-linear-gradient(left, #e4edea 50%, #00b19d 50%);
+  background: linear-gradient(left, white 50%, #00b19d 50%);
+  background-size: 50px 25%;;
+  padding: 2px;
+  display: block;
+}
+
+.wrap ul li a {
+  text-decoration: none;
+  color: #666;
+  display: block;
+}
+
+.wrap ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+.wrap ul li {
+  float: left;
+}
+
+
+.wrap ul:after {
+  clear: both;
+}
+
+.wrap ul:before,
+.wrap ul:after {
+    content: " ";
+    display: table;
+}
+
+.wrap ul {
+  position: relative;
+  background-color: #e4edea;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 1px solid #ccc;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+
+.wrap ul.primary li a {
+  display: block;
+  padding: 15px 12px;
+  
+}
+
+.wrap ul.primary li:last-child a {
+  border-right: none;
+}
+
+.wrap ul.primary li a:hover {
+  color: #00535e;
+}
+
+
+.wrap ul.sub {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 #BEBEBE;
+  width: 35%;
+  display:none;
+}
+
+.wrap ul.sub li {
+  float: none;
+  margin: 0;
+}
+
+.wrap ul.sub li a {
+  border-bottom: 1px dotted #ccc;
+  border-right: none;
+  color: #000;
+  padding: 15px 30px;
+}
+
+.wrap ul.sub li:last-child a {
+  border-bottom: none;
+}
+
+.wrap ul.sub li a:hover {
+  color: #000;
+  background: #eeeeee;
+}
+
+
+.wrap ul.primary li:hover ul {
+  display: block;
+  background: #fff;
+}
+
+
+.wrap ul.primary li:hover a {
+  background: #00535e;
+  color: white;
+  text-shadow: none;
+}
+
+.wrap ul.primary li:hover > a{
+  color: white;
+} 
+
+.wrap ul li.active a, .wrap ul li.active ul.sub li.active a { 
+    background-color: #00b19d;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    color: white;
+}
+
+.nuevo{
+	position: absolute;
+	right: 0;
+}
+/*****************************FMenu***********************/
+
+
+
+/****************************Dialogo**********************/
+#dialog-confirm p{
+	display:none;
+}
+/*****************************FDialogo**********************/
+
+
+
+
+
+/***************************Panel****************************/
+
+.title a{
+	text-decoration: none;
+}
+
+.boton-green {
+    color: #fffeff;
+    box-shadow: none;
+    background: #00535e;
+    border: solid 1px #00535e;
+}
+
+.cont {
+	margin-top:20px;
+    position: relative;
+    background: #f3f3f3;
+    border-radius: 8px;
+    margin-bottom: 21px;
+    padding-left: 11px;
+    overflow: hidden;
+    padding: 16px 18px;
+}
+
+.cont .title {
+    float: left;
+}
+
+.cont .title a {
+    color: #1a5e53;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 32px;
+}
+
+.cont .actions {
+    float: left;
+    margin-left: 43px;
+}
+
+.x-tab-bar-strip-default{
+	background-color: #00b19d !important;
+}
+
+.x-tab-bar-default{
+	background-color: white !important;
+}
+
+.x-tab.x-tab-active.x-tab-default {
+    border-color: #00b19d !important;
+    background-color: white !important;
+}
+
+.x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #666 !important;
+}
+
+.x-column-header {
+    color: #00535e !important;
+    text-align: center !important;
+    background: #e4edea !important;
+}
+.x-grid-item-container table tbody tr td.x-grid-cell-last div{
+	text-align: center !important;
+
+}
+
+.icons{
+	margin-right: 5px !important;
+}
+
+#importar{
+	margin-top:8px;
+}
+
+#importar a {
+	color: #00535e !important;
+	text-decoration: underline;
+}
+/******************************FPanel**********************/
+
+
+/****************************Tabla***********************/
+
+
+#tableContact, #tableContact thead tr th{
+	text-align: center;
+
+}
+
+/****************************FTabla***********************/
+
+
+
+
+/*************************Footer************************/
+.footer{
+	width: 100%;
+	height: 283px;
+	position: relative;
+  	clear: both;             
+  	margin-top: 20px;           
+  	padding-top: 0px;
+  	overflow: visible;
+	background: #f9f9f9;
+}
+
+.footer ul li a {
+    color: #666;
+    line-height: 22px;
+}
+
+footer{
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 26px;
+	width: 1024px;
+}
+
+footer .fondo{
+	background: #fff !important;
+}
+
+footer>div {
+    margin-right: 26px;
+    padding: 10px 20px;
+}
+
+ul, ul li{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#ayuda{
+	color: #7d7d7d;
+	font-size: 14px;
+	float: left;
+	height: 226px;
+	width: 335px;
+}
+
+#ayuda h4 {
+    font-size: 18px;
+    font-weight: bold;
+    background: url(https://cdn1.alegra.com/images/ayuda_icon.png) no-repeat scroll 0 1px transparent;
+    padding: 11px 0 19px 35px;
+    vertical-align: middle;
+}
+
+
+#soporte{
+	color: #7d7d7d;
+	font-size: 14px;
+	float: left;
+	height: 226px;
+	position: relative;
+	width: 187px;
+}
+
+#soporte h4 {
+    background: url(https://cdn1.alegra.com/images/soporte_icon.png) no-repeat -1px -1px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 11px 0 19px 55px;
+}
+
+#soporte ul li{
+	margin-bottom: 5px; 
+}
+
+#contactos{
+	color: #7d7d7d;
+	font-size: 14px;
+	float: left;
+	height: 226px;
+	position: relative;
+	width: 450px;
+	margin-right: 0;
+}
+
+#contactos h4 {
+    background: url(https://cdn1.alegra.com/images/info_icon_1.png) no-repeat -1px -1px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 11px 0 19px 60px;
+}
+
+#contactos ul li{
+	margin-bottom: 5px; 
+}
